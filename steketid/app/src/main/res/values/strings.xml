@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Steketid</string>
+    <string name="nPizza_TextView">Antall pizza</string>
+    <string name="nOvens_TextView">Antall ovner</string>
 </resources>
