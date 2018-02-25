@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="jsgantt/main.css" />
+    <script type="textjavascript" src="jsgantt/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="jsgantt/jsgantt.css" />
+    <script type="text/javascript" src="jsgantt/jsgantt.js"></script>
+</head>
+<body>
+
+<div style="position:relative" class="gantt" id="GanttChartDIV"></div>
+<script>
+
+var g = new JSGantt.GanttChart(document.getElementById('GanttChartDIV'), 'day');
+
+if( g.getDivId() != null ) {
+g.setCaptionType('Complete');
+g.setQuarterColWidth(36);
+g.setDateTaskDisplayFormat('day dd month yyyy');
+g.setDayMajorDateDisplayFormat('mon yyyy - Week ww');
+g.setWeekMinorDateDisplayFormat('dd mon');
+g.setShowTaskInfoLink(1);
+g.setShowEndWeekDate(0);
+g.setUseSingleCell(10000);
+g.setFormatArr('Day', 'Week', 'Month', 'Quarter');
+
+JSGantt.parseXML("project.xml",g);
+g.Draw();
+}
+else
+{
+alert("Error, unable to create Gantt Chart");
+}
+
+</script>
+</body>
+</html>
