@@ -61,16 +61,17 @@ public class MainActivity extends AppCompatActivity {
         nPizzas_NumP.setOnValueChangedListener(listener);
         nOvens_NumP.setOnValueChangedListener(listener);
 
+
     }
 
     //time through one oven
     int timeOneOven (int nOfPizzas){
-        return (int)Math.ceil(TIME_THROUGH_OVEN + TIME_BETWEEN_PIZZAS * (double) nOfPizzas);
+        return (int)Math.ceil(TIME_THROUGH_OVEN + (TIME_BETWEEN_PIZZAS * (double) nOfPizzas));
     }
 
     //time through n-ovens
     int timeNOvens (int nOfPizzas, int nOfOvens) {
-        return timeOneOven((int)Math.ceil((nOfPizzas / nOfOvens)));
+        return timeOneOven((int)Math.ceil(((double)nOfPizzas / (double)nOfOvens)));
     }
 
 }

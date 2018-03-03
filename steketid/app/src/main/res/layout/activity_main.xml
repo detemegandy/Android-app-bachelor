@@ -1,54 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:gravity="center|top"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
     tools:context="com.example.itsme.steketid.MainActivity">
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/output_textview"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:gravity="center"
         android:padding="16dp"
-        android:id="@+id/output_textview"/>
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_textview">
 
 
         <TextView
             android:id="@+id/pizzanumber_textview"
-            android:layout_margin="8dp"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nPizza_TextView" />
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="@string/nPizza_TextView"
+            android:textSize="16sp" />
 
         <NumberPicker
-            android:layout_margin="8dp"
             android:id="@+id/pizzanumber_numberpicker"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
 
 
-    <TextView
-            android:layout_margin="8dp"
+        <TextView
             android:id="@+id/ovennumber_textview"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nOvens_TextView" />
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="@string/nOvens_TextView"
+            android:textSize="16sp" />
 
         <NumberPicker
-            android:layout_margin="8dp"
             android:id="@+id/ovennumber_numberpicker"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
     </LinearLayout>
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
