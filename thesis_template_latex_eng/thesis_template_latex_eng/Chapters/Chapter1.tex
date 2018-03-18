@@ -8,6 +8,11 @@
 \section{Motivation}
 
 \section{Problem Definition}
+The goal of this thesis is to develop an android app to track the smartphone status such as battery, bandwidth availability and mobile data quota etc. The measurements are then sent to a backend service which intelligently adapts the quality of multimedia notifications according to the device status.
+
+The app will be designed as a client for notifications from Spotify as well as social networks such as Facebook. The app authenticates users with the help of APIs from these services and receives notifications. From the device side it collects and sends the device status to the backend and receives and displays the notifications.
+
+The backend service acts as a forwarding agent for notifications from the original services such as Spotify and Facebook. The backend intercepts the notifications for the users using the authentication tokens obtained via user credentials. The backend service according to the device status transforms the notifications (for e.g, lower resolution images in Facebook) and forwards it to the client app. The forwarding of notifications is done using Google notification service.
 
 \section{Usecases/Examples}
 
@@ -16,3 +21,4 @@
 \section{Contributions}
 
 \section{Outline}
+
