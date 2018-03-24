@@ -1,0 +1,29 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Anders~Tilly(2017)]{anderstilly2017}
+Umeå University~(1996) Anders~Tilly, B.S. Political Science \&
+  National~Economies.
+\newblock Is norway safe to visit?, May 2017.
+\newblock URL \url{https://www.quora.com/Is-Norway-safe-to-visit}.
+
+\bibitem[Uddin et~al.(2016)Uddin, Setty, Zhao, Vitenberg, and
+  Venkatasubramanian]{Richnote}
+M.~Y.~S. Uddin, V.~Setty, Y.~Zhao, R.~Vitenberg, and N.~Venkatasubramanian.
+\newblock Richnote: Adaptive selection and delivery of rich media notifications
+  to mobile users.
+\newblock In \emph{2016 IEEE 36th International Conference on Distributed
+  Computing Systems (ICDCS)}, pages 159--168, June 2016.
+\newblock \doi{10.1109/ICDCS.2016.107}.
+
+\bibitem[Pressman(2010)]{SoftwE}
+Roger~S. Pressman.
+\newblock \emph{Software Engineering: A Practitioner's Approach}.
+\newblock McGraw-Hill Higher Education, seventh international edition, 2010.
+\newblock ISBN 0071267824, 9780071267823.
+
+\end{thebibliography}
