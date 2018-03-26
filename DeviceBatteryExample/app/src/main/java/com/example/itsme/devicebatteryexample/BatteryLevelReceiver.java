@@ -17,6 +17,13 @@ import android.os.BatteryManager;
 
 public class BatteryLevelReceiver extends BroadcastReceiver {
 
+    private boolean isCharging;
+    private boolean usbCharge;
+    private boolean acCharge;
+    private int batteryLevel;
+    private int batteryScale;
+    private float batteryPct;
+
     @Override //executed upon receiving one of the intents
     public void onReceive(Context context, Intent intent) {
         IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
@@ -25,19 +32,19 @@ public class BatteryLevelReceiver extends BroadcastReceiver {
 
         // Are we charging / charged?
         int status = batteryStatus.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
-        boolean isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING ||
+        isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING ||
                 status == BatteryManager.BATTERY_STATUS_FULL;
 
         // How are we charging?
         int chargePlug = batteryStatus.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
-        boolean usbCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_USB;
-        boolean acCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_AC;
+        usbCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_USB;
+        acCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_AC;
 
         // factors for batterypct
-        int batteryLevel = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
-        int batteryScale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
+        batteryLevel = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
+        batteryScale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
 
         //calculate batterypct
-        float batteryPct = batteryLevel / (float)batteryScale;
+        batteryPct = batteryLevel / (float)batteryScale;
     }
 }
