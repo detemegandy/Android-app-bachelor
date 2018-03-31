@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.itsme.devicebatteryexample">
 
     <application
@@ -17,9 +18,11 @@
             </intent-filter>
         </activity>
 
-        <!-- intents that fire on device charger connection-->
+        <!--    intent-filter for PowerConnectionReceiver-->
         <receiver android:name=".PowerConnectionReceiver">
             <intent-filter>
+
+                <!--    intents that fire on device charger connection-->
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
             </intent-filter>

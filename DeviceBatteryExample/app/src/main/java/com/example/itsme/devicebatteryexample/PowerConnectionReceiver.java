@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.BatteryManager;
 
+import org.jetbrains.annotations.Contract;
+
 /**
     receives the intents from
 
@@ -30,15 +32,18 @@ public class PowerConnectionReceiver extends BroadcastReceiver {
         acCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_AC;
     }
 
+    @Contract(pure = true)
     public static boolean getChargingState() {
         return isCharging;
     }
 
+    @Contract(pure = true)
     public static boolean isAcCharge() {
         return acCharge;
     }
 
 
+    @Contract(pure = true)
     public static boolean isUsbCharge() {
         return usbCharge;
     }
