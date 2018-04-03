@@ -15,9 +15,9 @@ import android.os.BatteryManager;
  **/
 
 public class PowerConnectionReceiver extends BroadcastReceiver {
-    private static boolean isCharging;
-    private static boolean usbCharge;
-    private static boolean acCharge;
+    private static boolean isCharging = false;
+    private static boolean usbCharge = false;
+    private static boolean acCharge = false;
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -28,18 +28,13 @@ public class PowerConnectionReceiver extends BroadcastReceiver {
         int chargePlug = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
         usbCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_USB;
         acCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_AC;
+
+        //send intent to Main Broadcastreceiver
+        Intent intentToMain = new Intent(MainActivity.CONNECTION_UPDATE_ACTION)
+                .putExtra("isCharging", isCharging)
+                .putExtra("usbCharge", usbCharge)
+                .putExtra("acCharge", acCharge);
+        context.sendBroadcast(intentToMain);
     }
 
-    public static boolean getChargingState() {
-        return isCharging;
-    }
-
-    public static boolean isAcCharge() {
-        return acCharge;
-    }
-
-
-    public static boolean isUsbCharge() {
-        return usbCharge;
-    }
 }

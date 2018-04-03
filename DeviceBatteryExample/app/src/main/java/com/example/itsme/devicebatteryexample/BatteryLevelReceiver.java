@@ -17,18 +17,16 @@ import android.os.BatteryManager;
 
 public class BatteryLevelReceiver extends BroadcastReceiver {
 
-    private boolean isCharging;
-    private boolean usbCharge;
-    private boolean acCharge;
-    private int batteryLevel;
-    private int batteryScale;
-    private float batteryPct;
+
+    private boolean isCharging = false;
+    private boolean usbCharging = false;
+    private boolean acCharging = false;
+    private int batteryLevel = 0;
+    private int batteryScale = 0;
+    private float batteryPct = 0;
 
     @Override //executed upon receiving one of the intents
-    public void onReceive(Context context, Intent intent) {
-        IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-        Intent batteryStatus = context.registerReceiver(null, ifilter);
-
+    public void onReceive(Context context, Intent batteryStatus) {
 
         // Are we charging / charged?
         int status = batteryStatus.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
@@ -37,8 +35,8 @@ public class BatteryLevelReceiver extends BroadcastReceiver {
 
         // How are we charging?
         int chargePlug = batteryStatus.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
-        usbCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_USB;
-        acCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_AC;
+        usbCharging = chargePlug == BatteryManager.BATTERY_PLUGGED_USB;
+        acCharging = chargePlug == BatteryManager.BATTERY_PLUGGED_AC;
 
         // factors for batterypct
         batteryLevel = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
@@ -46,5 +44,12 @@ public class BatteryLevelReceiver extends BroadcastReceiver {
 
         //calculate batterypct
         batteryPct = batteryLevel / (float)batteryScale;
+
+        Intent intentToMain = new Intent(MainActivity.BATTERY_LEVEL_ACTION);
+        intentToMain.putExtra("isCharging", isCharging);
+        intentToMain.putExtra("usbCharging", usbCharging);
+        intentToMain.putExtra("acCharging", acCharging);
+        intentToMain.putExtra("batteryPct", batteryPct);
+        context.sendBroadcast(intentToMain);
     }
 }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DeviceBatteryExample</string>
+    <string name="btnText">Update connection status</string>
+    <string name="tVText">Hello World!</string>
 </resources>
