@@ -11,27 +11,25 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".MainActivity">
+
+            <!--intents that fire when targeting this activity-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
-        <!-- intents that fire on device charger connection-->
-        <receiver android:name=".PowerConnectionReceiver">
+            <!-- intents that fire on device charger connection-->
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
             </intent-filter>
-        </receiver>
 
-        <!--intents that fire on threshold of power level of the device-->
-        <receiver android:name=".BatteryLevelReceiver">
+            <!--intents that fire on threshold of power level of the device-->
             <intent-filter>
                 <action android:name="android.intent.action.BATTERY_LOW"/>
                 <action android:name="android.intent.action.BATTERY_OKAY"/>
             </intent-filter>
-        </receiver>
+        </activity>
     </application>
 
 </manifest>
