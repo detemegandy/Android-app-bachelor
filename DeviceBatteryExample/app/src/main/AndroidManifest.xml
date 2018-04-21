@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.itsme.devicebatteryexample">
 
+    <!--permission to get battery stats-->
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
         <activity android:name=".MainActivity">
+
+
 
             <!--intents that fire when targeting this activity-->
             <intent-filter>
@@ -18,17 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <!-- intents that fire on device charger connection-->
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
-                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
-            </intent-filter>
 
-            <!--intents that fire on threshold of power level of the device-->
-            <intent-filter>
-                <action android:name="android.intent.action.BATTERY_LOW"/>
-                <action android:name="android.intent.action.BATTERY_OKAY"/>
-            </intent-filter>
+
+
         </activity>
     </application>
 

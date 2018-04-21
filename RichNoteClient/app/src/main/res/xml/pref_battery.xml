@@ -1,0 +1,34 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<SwitchPreference
+        android:defaultValue="true"
+        android:key="delete1"
+        android:summary="@string/delete2"
+        android:title="@string/delete3" />
+
+    &lt;!&ndash; NOTE: EditTextPreference accepts EditText attributes. &ndash;&gt;
+    &lt;!&ndash; NOTE: EditTextPreference's summary should be set to its value by the activity code. &ndash;&gt;
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/delete4"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/delete5" />-->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="20"
+        android:entries="@array/titles_battery_threshold_settings_list"
+        android:entryValues="@array/values_battery_threshold_settings_list"
+        android:key="battery_threshold"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/title_battery_threshold_settings" />
+
+
+</PreferenceScreen>

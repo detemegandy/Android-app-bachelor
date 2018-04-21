@@ -12,14 +12,19 @@ import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
-import android.support.v7.app.ActionBar;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.RingtonePreference;
+import android.support.v7.app.ActionBar;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
 import java.util.List;
+
+import alobar.preference.NumberPickerPreference;
 
 /**
  * A {@link PreferenceActivity} that presents a set of application settings. On
@@ -34,6 +39,13 @@ import java.util.List;
  */
 public class SettingsActivity extends AppCompatPreferenceActivity {
 
+    /** Key need to be the same as set in the xml*/
+
+    static final String BATTERY_THRESHOLD_KEY = "battery_threshold";
+    static final String NOTIFICATIONS_NEW_MESSAGE_RINGTONE_KEY = "notifications_new_message_ringtone";
+    static final String MOBILE_DATA_LIMIT_KEY = "mobile_data_limit";
+    static final String RESET_DATA_USAGE_DAY_KEY = "reset_data_usage_day";
+
     /**
      * A preference value change listener that updates the preference's summary
      * to reflect its new value.
@@ -42,6 +54,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
+//            Log.d("onPreferenceCh called",stringValue);
 
             if (preference instanceof ListPreference) {
                 // For list preferences, look up the correct display value in
@@ -77,6 +90,9 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                     }
                 }
 
+            } else if (preference instanceof NumberPickerPreference) {
+                //get value stored from numberpicker
+                preference.setSummary(stringValue);
             } else {
                 // For all other preferences, set the summary to the value's
                 // simple string representation.
@@ -110,10 +126,18 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
         // Trigger the listener immediately with the preference's
         // current value.
-        sBindPreferenceSummaryToValueListener.onPreferenceChange(preference,
-                PreferenceManager
-                        .getDefaultSharedPreferences(preference.getContext())
-                        .getString(preference.getKey(), ""));
+        // If its the numberpicker we get an int, if not its a string
+        if (preference instanceof NumberPickerPreference) {
+            sBindPreferenceSummaryToValueListener.onPreferenceChange(preference,
+                    PreferenceManager
+                            .getDefaultSharedPreferences(preference.getContext())
+                            .getInt(preference.getKey(), 1));
+        } else {
+            sBindPreferenceSummaryToValueListener.onPreferenceChange(preference,
+                    PreferenceManager
+                            .getDefaultSharedPreferences(preference.getContext())
+                            .getString(preference.getKey(), ""));
+        }
     }
 
     @Override
@@ -125,9 +149,24 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     /**
      * Set up the {@link android.app.ActionBar}, if the API is available.
      */
+
+    //TODO reference https://stackoverflow.com/questions/30139548/how-to-add-toolbar-in-preferenceactivity
     private void setupActionBar() {
+
+        ViewGroup rootView = findViewById(R.id.mainActivityToolbar);
+
+
+        if (rootView != null) {
+            View view = getLayoutInflater().inflate(R.layout.app_bar_layout, rootView,false);
+            rootView.addView(view,0);
+
+            Toolbar toolbar = findViewById(R.id.settingsToolbar);
+
+            setSupportActionBar(toolbar);
+        }
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
+        if(actionBar != null) {
+
             // Show the Up button in the action bar.
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
@@ -156,29 +195,28 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
      */
     protected boolean isValidFragment(String fragmentName) {
         return PreferenceFragment.class.getName().equals(fragmentName)
-                || GeneralPreferenceFragment.class.getName().equals(fragmentName)
-                || DataSyncPreferenceFragment.class.getName().equals(fragmentName)
+                || BatteryPreferenceFragment.class.getName().equals(fragmentName)
+                || DataLimitFragment.class.getName().equals(fragmentName)
                 || NotificationPreferenceFragment.class.getName().equals(fragmentName);
     }
 
     /**
-     * This fragment shows general preferences only. It is used when the
+     * This fragment shows battery preferences only. It is used when the
      * activity is showing a two-pane settings UI.
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public static class GeneralPreferenceFragment extends PreferenceFragment {
+    public static class BatteryPreferenceFragment extends PreferenceFragment {
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.pref_general);
+            addPreferencesFromResource(R.xml.pref_battery);
             setHasOptionsMenu(true);
 
             // Bind the summaries of EditText/List/Dialog/Ringtone preferences
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("example_text"));
-            bindPreferenceSummaryToValue(findPreference("example_list"));
+            bindPreferenceSummaryToValue(findPreference(BATTERY_THRESHOLD_KEY));
         }
 
         @Override
@@ -208,7 +246,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
+            bindPreferenceSummaryToValue(findPreference(NOTIFICATIONS_NEW_MESSAGE_RINGTONE_KEY));
         }
 
         @Override
@@ -223,22 +261,23 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     }
 
     /**
-     * This fragment shows data and sync preferences only. It is used when the
+     * This fragment shows data limit preferences only. It is used when the
      * activity is showing a two-pane settings UI.
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public static class DataSyncPreferenceFragment extends PreferenceFragment {
+    public static class DataLimitFragment extends PreferenceFragment {
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.pref_data_sync);
+            addPreferencesFromResource(R.xml.pref_mobile_data);
             setHasOptionsMenu(true);
 
             // Bind the summaries of EditText/List/Dialog/Ringtone preferences
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("sync_frequency"));
+            bindPreferenceSummaryToValue(findPreference(MOBILE_DATA_LIMIT_KEY));
+            bindPreferenceSummaryToValue(findPreference(RESET_DATA_USAGE_DAY_KEY));
         }
 
         @Override

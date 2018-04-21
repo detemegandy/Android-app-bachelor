@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:preference="http://schemas.android.com/apk/res-auto">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="1024"
+        android:entries="@array/pref_mobile_data_limit_list_titles"
+        android:entryValues="@array/pref_mobile_data_limit_list_values"
+        android:key="mobile_data_limit"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_mobile_data_title_data_limit" />
+
+    <alobar.preference.NumberPickerPreference
+        android:defaultValue="@integer/number_default_value"
+        android:key="reset_data_usage_day"
+        android:title="@string/pref_give_me_a_number_title"
+        preference:maxValue="@integer/number_max_value"
+        preference:minValue="@integer/number_min_value"
+        preference:wrapSelectorWheel="false" />
+
+
+    <!-- This preference simply launches an intent when selected. Use this UI sparingly, per
+         design guidelines. -->
+    <!-- <Preference android:title="@string/pref_title_system_sync_settings">
+         <intent android:action="android.settings.SYNC_SETTINGS" />
+     </Preference>-->
+
+</PreferenceScreen>

@@ -5,11 +5,10 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Anders~Tilly(2017)]{anderstilly2017}
-Umeå University~(1996) Anders~Tilly, B.S. Political Science \&
-  National~Economies.
-\newblock Is norway safe to visit?, May 2017.
-\newblock URL \url{https://www.quora.com/Is-Norway-safe-to-visit}.
+\bibitem[Cook(1990)]{cook_1990}
+Rick Cook.
+\newblock \emph{The wizardry compiled}.
+\newblock Baen, 1990.
 
 \bibitem[Uddin et~al.(2016)Uddin, Setty, Zhao, Vitenberg, and
   Venkatasubramanian]{Richnote}

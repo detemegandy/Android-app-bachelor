@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.3)  18 MAR 2018 21:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.3)  15 APR 2018 18:57
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1279,7 +1279,7 @@ eng.pdf>] [2
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 155.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 150.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1386,33 +1386,18 @@ Chapter 6.
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(Thesis.bbl
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 12.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 6016) in paragraph at lines 9--13
-\T1/lmr/m/n/10.95 (+20) Is nor-way safe to visit?, May 2017.  URL [][]$\T1/lmtt
-/m/n/10.95 https : / / www . quora . com /
- []
-
-)
+(Thesis.bbl)
 
 Package ps4pdf Warning: `Thesis-pics.pdf' is no more valid.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
 [17
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
  (Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
 
 
  *File List*
@@ -1547,25 +1532,24 @@ uis_logo_eng.pdf    Graphic file (type pdf)
 ./Chapters/Chapter5.tex
 ./Chapters/Chapter6.tex
   Thesis.bbl
-  t1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: ADFD632E78B5DA6B53CF6B49B9ACD224;3835.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
  ) 
 Here is how much of TeX's memory you used:
- 16526 strings out of 493305
- 239320 string characters out of 3138875
- 339128 words of memory out of 3000000
- 19628 multiletter control sequences out of 15000+200000
- 76409 words of font info for 84 fonts, out of 3000000 for 9000
+ 16459 strings out of 493305
+ 238347 string characters out of 3138875
+ 339120 words of memory out of 3000000
+ 19590 multiletter control sequences out of 15000+200000
+ 74577 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,11n,45p,716b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
-vips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
 .enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
@@ -1575,11 +1559,10 @@ TeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmtt10.pfb>
-Output written on Thesis.pdf (33 pages, 341307 bytes).
+9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Thesis.pdf (33 pages, 310174 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
+ 371 PDF objects out of 1000 (max. 8388607)
  73 named destinations out of 1000 (max. 500000)
- 19166 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 18654 words of extra memory for PDF output out of 20736 (max. 10000000)
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="number_default_value">1</integer>
+    <integer name="number_max_value">28</integer>
+    <integer name="number_min_value">1</integer>
+</resources>

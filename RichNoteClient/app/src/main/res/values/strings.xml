@@ -4,47 +4,52 @@
     <!-- Strings related to Settings -->
 
     <!-- Example General settings -->
-    <string name="pref_header_general">General</string>
+    <string name="title_battery_settings_header">General</string>
+    <!--
+        <string name="delete3">Enable social recommendations</string>
+        <string name="delete2">Recommendations for people to contact
+            based on your message history
+        </string>
 
-    <string name="pref_title_social_recommendations">Enable social recommendations</string>
-    <string name="pref_description_social_recommendations">Recommendations for people to contact
-        based on your message history
-    </string>
+        <string name="delete5">Display name</string>
+        <string name="delete4">John Smith</string>-->
 
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">John Smith</string>
-
-    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
-    <string-array name="pref_example_list_titles">
-        <item>Always</item>
-        <item>When possible</item>
-        <item>Never</item>
+    <string name="title_battery_threshold_settings">Battery Threshold Percentage</string>
+    <string-array name="titles_battery_threshold_settings_list">
+        <item>20 Percent</item>
+        <item>30 Percent</item>
+        <item>40 Percent</item>
     </string-array>
-    <string-array name="pref_example_list_values">
-        <item>1</item>
-        <item>0</item>
-        <item>-1</item>
-    </string-array>
-
-    <!-- Example settings for Data & Sync -->
-    <string name="pref_header_data_sync">Data &amp; sync</string>
-
-    <string name="pref_title_sync_frequency">Sync frequency</string>
-    <string-array name="pref_sync_frequency_titles">
-        <item>15 minutes</item>
-        <item>30 minutes</item>
-        <item>1 hour</item>
-        <item>3 hours</item>
-        <item>6 hours</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_values">
-        <item>15</item>
+    <string-array name="values_battery_threshold_settings_list">
+        <item>20</item>
         <item>30</item>
-        <item>60</item>
-        <item>180</item>
-        <item>360</item>
-        <item>-1</item>
+        <item>40</item>
+    </string-array>
+
+    <!--settings in the toolbar-->
+
+    <string name="action_settings_title">Settings</string>
+    <!-- Example settings for Data & Sync -->
+    <string name="title_data_limit_header">Mobile Data Limit</string>
+
+    <string name="pref_mobile_data_title_data_limit">Data Limit</string>
+    <string-array name="pref_mobile_data_limit_list_titles">
+        <item>100 MB</item>
+        <item>200 MB</item>
+        <item>500 MB</item>
+        <item>1 GB</item>
+        <item>2 GB</item>
+        <item>5 GB</item>
+        <item>10GB</item>
+    </string-array>
+    <string-array name="pref_mobile_data_limit_list_values">
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1024</item>
+        <item>2048</item>
+        <item>5120</item>
+        <item>10240</item>
     </string-array>
 
     <string-array name="list_preference_entries">
@@ -64,12 +69,14 @@
     <string name="pref_title_system_sync_settings">System sync settings</string>
 
     <!-- Example settings for Notifications -->
-    <string name="pref_header_notifications">Notifications</string>
+    <string name="title_notifications_header">Notifications</string>
 
-    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="title_notification_enable_setting">New message notifications</string>
 
-    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="title_notification_ringtone_setting">Ringtone</string>
     <string name="pref_ringtone_silent">Silent</string>
 
-    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_notification_vibrate_setting">Vibrate</string>
+    <string name="pref_give_me_a_number_title">Monthly Reset Date</string>
+    <string name="SettingsActivityName">Settings</string>
 </resources>
