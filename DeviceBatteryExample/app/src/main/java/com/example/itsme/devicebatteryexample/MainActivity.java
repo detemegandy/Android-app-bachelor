@@ -13,7 +13,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -180,36 +183,36 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //method to updateText
-    /*TODO make this method into the updatemethod for the server/backend
+    /*TODO make this method into the update method for the server/backend
     * log time and battery remaining to a file and send one pair to server?
     * then have the backup in case server doesn't receive update?*/
     void updateText(String TAG) {
         Log.d(TAG,"updateText started");
 
         //update BatteryRemainder and get the time and store them
-        long updateTimeMillis = updateBatteryRemainderNanoWatt();
-        
+        Date updateTimeMillis = updateBatteryRemainderNanoWatt();
+
         Calendar upDateTimeCal = Calendar.getInstance();
-        upDateTimeCal.setTimeInMillis(updateTimeMillis);
-        updateText = "isChargin: " + isCharging +"\n"+
+        upDateTimeCal.setTimeInMillis(updateTimeMillis.getTime());
+        updateText = "isCharging: " + isCharging +"\n"+
                 "usbCharge: " + usbCharge +"\n"+
                 "acCharge: " + acCharge +"\n"+
                 "batteryPct: " + batteryPct +"\n"+
                 "batteryRemainingNanoWatt: " + batteryRemainingNanoWatt +"µW\n"+
-                "updateTimeMillis: " + (!(updateTimeMillis == -1)? updateTimeMillis +"ms": "not updated");
+                "updateTimeMillis: " + (!(updateTimeMillis.getTime() == -1)? SimpleDateFormat.(updateTimeMillis) +"ms": "not updated");
         statusText.setText( updateText);
         Log.d(TAG,"updateText ended");
     }
 
-    private long updateBatteryRemainderNanoWatt() {
+    private Date updateBatteryRemainderNanoWatt() {
         long updateBatteryRemainderNanoWatt = batteryManager.getLongProperty(BatteryManager.BATTERY_PROPERTY_ENERGY_COUNTER);
 
         //if it is not supported on the device method will not store the value
         if (!(updateBatteryRemainderNanoWatt == Long.MIN_VALUE) ){
             batteryRemainingNanoWatt = updateBatteryRemainderNanoWatt;
-            return System.currentTimeMillis();
+            return new Date();
         }
         //and return -1
-        return -1;
+        return null;
     }
 }
