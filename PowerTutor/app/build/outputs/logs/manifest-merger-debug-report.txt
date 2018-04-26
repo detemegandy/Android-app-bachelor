@@ -1,0 +1,179 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:2:1-93:12
+	package
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:3:7-37
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:4:32-57
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:4:7-31
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:5:3-84:17
+	android:label
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:5:46-78
+	android:icon
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:5:16-45
+activity#edu.umich.PowerTutor.ui.UMLogger
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:6:5-13:16
+	android:screenOrientation
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:8:15-51
+	android:label
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:7:15-47
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:6:15-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:9:7-12:23
+action#android.intent.action.MAIN
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:10:9-61
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:10:17-58
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:11:9-69
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:11:19-66
+activity#edu.umich.PowerTutor.ui.Help
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:14:5-18:16
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:14:15-38
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:15:7-17:23
+activity#edu.umich.PowerTutor.ui.PowerViewer
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:19:5-23:16
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:19:15-45
+activity#edu.umich.PowerTutor.ui.PowerTop
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:24:5-29:16
+	android:label
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:25:15-40
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:24:15-42
+activity#edu.umich.PowerTutor.ui.PowerPie
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:30:5-34:16
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:30:15-42
+activity#edu.umich.PowerTutor.ui.MiscView
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:35:5-39:16
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:35:15-42
+activity#edu.umich.PowerTutor.ui.PowerTabs
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:40:5-45:16
+	android:theme
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:41:15-62
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:40:15-43
+activity#edu.umich.PowerTutor.ui.EditPreferences
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:46:5-51:16
+	android:label
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:47:15-49
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:46:15-49
+activity#edu.umich.PowerTutor.ui.ViewerPreferences
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:52:5-57:16
+	android:label
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:53:15-57
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:52:15-51
+activity#edu.umich.PowerTutor.widget.Configure
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:58:5-63:16
+	android:label
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:59:15-58
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:58:15-47
+intent-filter#action:name:android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:60:7-62:23
+action#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:61:9-79
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:61:17-76
+activity#edu.umich.PowerTutor.widget.DataSourceConfigure
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:64:5-69:16
+	android:label
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:65:15-52
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:64:15-57
+receiver#edu.umich.PowerTutor.ui.StartupReceiver
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:70:5-75:16
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:70:15-49
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+category:name:android.intent.category.HOME
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:71:7-74:23
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:72:9-71
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:72:17-68
+category#android.intent.category.HOME
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:73:9-65
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:73:19-62
+service#edu.umich.PowerTutor.service.UMLoggerService
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:76:5-64
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:76:14-53
+receiver#edu.umich.PowerTutor.widget.PowerWidget
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:77:5-83:18
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:77:15-49
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:78:7-80:23
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:79:11-78
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:79:19-75
+meta-data#android.appwidget.provider
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:81:7-82:56
+	android:resource
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:82:18-53
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:81:18-59
+uses-sdk
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:86:3-41
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:86:3-41
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:86:3-41
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:86:3-41
+INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:86:3-41
+	android:targetSdkVersion
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:86:3-41
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:86:13-38
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:87:3-65
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:87:20-62
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:88:3-77
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:88:20-74
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:89:3-74
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:89:20-71
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:90:3-73
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:90:20-70
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:91:3-77
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:91:20-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:92:3-79
+	android:name
+		ADDED from C:\Users\itsme\Dropbox\Dokumenter\Android_app\PowerTutor\app\src\main\AndroidManifest.xml:92:20-76

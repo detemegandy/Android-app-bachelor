@@ -1,7 +1,9 @@
 package com.example.itsme.richnoteclient;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v4.net.ConnectivityManagerCompat;
@@ -17,25 +19,39 @@ import static android.support.v4.net.ConnectivityManagerCompat.RESTRICT_BACKGROU
 public class MainActivity extends AppCompatActivity {
 
 
+    private final String ACTION_CONNECTION_CHANGED = ConnectivityManager.CONNECTIVITY_ACTION;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar myToolbar = findViewById(R.id.mainActivityToolbar);
         setSupportActionBar(myToolbar);
+        initializeAndRegisterReceivers();
     }
+
+    private void initializeAndRegisterReceivers() {
+
+        //start the connectivity receiver and register for changes in connection
+        ConnectionReceiver connectionReceiver = new ConnectionReceiver();
+        registerReceiver(connectionReceiver, new IntentFilter(ACTION_CONNECTION_CHANGED));
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
+
     }
 
+    //when the toolbar has an item selected
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id = item.getItemId();
 
+        //if its the settings icon start the settingsactivity
         if (id == R.id.action_settings) {
             startSettingsActivity();
             return true;
@@ -43,8 +59,17 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void startSettingsActivity() {
 
+    //class for looking at bandwidth
+    private class ConnectionReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            //connection changed, it could mean there is no internet or the type of connection has changed
+            Bundle bundle = intent.getExtras();
+        }
+    }
+    private void startSettingsActivity() {
         startActivity(new Intent(this, SettingsActivity.class));
     }
 

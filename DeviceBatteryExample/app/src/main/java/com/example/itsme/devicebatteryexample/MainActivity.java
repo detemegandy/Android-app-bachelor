@@ -12,11 +12,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+import com.android.internal.util.XmlUtils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -161,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
 
             // Are we charging / charged?
             int status = batteryStatus.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
-            Log.d(TAG,"getintEXTRA_STATUS: "+ status);
             isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING ||
                     status == BatteryManager.BATTERY_STATUS_FULL;
 
@@ -190,29 +192,55 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG,"updateText started");
 
         //update BatteryRemainder and get the time and store them
-        Date updateTimeMillis = updateBatteryRemainderNanoWatt();
+        long updateTimeMillis = updateBatteryRemainderNanoWatt();
 
-        Calendar upDateTimeCal = Calendar.getInstance();
-        upDateTimeCal.setTimeInMillis(updateTimeMillis.getTime());
         updateText = "isCharging: " + isCharging +"\n"+
                 "usbCharge: " + usbCharge +"\n"+
                 "acCharge: " + acCharge +"\n"+
                 "batteryPct: " + batteryPct +"\n"+
-                "batteryRemainingNanoWatt: " + batteryRemainingNanoWatt +"µW\n"+
-                "updateTimeMillis: " + (!(updateTimeMillis.getTime() == -1)? SimpleDateFormat.(updateTimeMillis) +"ms": "not updated");
+                "batteryRemainingNanoWatt: " + method() +"µW\n"+
+                "updateTimeMillis: " + (!(updateTimeMillis == -1)? updateTimeMillis +"ms": "not updated");
         statusText.setText( updateText);
         Log.d(TAG,"updateText ended");
     }
 
-    private Date updateBatteryRemainderNanoWatt() {
+    private long updateBatteryRemainderNanoWatt() {
         long updateBatteryRemainderNanoWatt = batteryManager.getLongProperty(BatteryManager.BATTERY_PROPERTY_ENERGY_COUNTER);
 
         //if it is not supported on the device method will not store the value
         if (!(updateBatteryRemainderNanoWatt == Long.MIN_VALUE) ){
             batteryRemainingNanoWatt = updateBatteryRemainderNanoWatt;
-            return new Date();
+            return System.currentTimeMillis();
         }
         //and return -1
-        return null;
+        return -1;
     }
+
+    double method() {
+        Object mPowerProfile_ = null;
+
+        final String POWER_PROFILE_CLASS = "com.android.internal.os.PowerProfile";
+
+        try {
+            mPowerProfile_ = Class.forName(POWER_PROFILE_CLASS)
+                    .getConstructor(Context.class).newInstance(this);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            double batteryCapacity = (Double) Class
+                    .forName(POWER_PROFILE_CLASS)
+                    .getMethod("getAveragePower", java.lang.String.class)
+                    .invoke(mPowerProfile_, "battery.capacity");
+            Toast.makeText(MainActivity.this, batteryCapacity + " mah",
+                    Toast.LENGTH_LONG).show();
+            return  batteryCapacity;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
+    final int power_profile_id = com.android.internal.R.xml.power_profile;
 }

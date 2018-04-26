@@ -33,6 +33,7 @@ public class FirebaseMessagingServiceExample extends FirebaseMessagingService {
             if (/* Check if data needs to be processed by long running job */ true) {
                 // For long-running tasks (10 seconds or more) use Firebase Job Dispatcher.
                 //scheduleJob();
+               MainActivity.setText( "From: " + remoteMessage.getFrom() + "\n" + "Message data payload: " + remoteMessage.getData());
             } else {
                 // Handle message within 10 seconds
                 //handleNow();
