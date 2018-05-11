@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 import static android.support.v4.net.ConnectivityManagerCompat.RESTRICT_BACKGROUND_STATUS_DISABLED;
 import static android.support.v4.net.ConnectivityManagerCompat.RESTRICT_BACKGROUND_STATUS_ENABLED;
@@ -21,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
     private final String ACTION_CONNECTION_CHANGED = ConnectivityManager.CONNECTIVITY_ACTION;
 
+    //must be the same as id's in the XML documents
+
+
+
+    private WebView webview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +35,11 @@ public class MainActivity extends AppCompatActivity {
         Toolbar myToolbar = findViewById(R.id.mainActivityToolbar);
         setSupportActionBar(myToolbar);
         initializeAndRegisterReceivers();
+        webview = findViewById(R.id.webview);
+        webview.loadData();
     }
+
+
 
     private void initializeAndRegisterReceivers() {
 

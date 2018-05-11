@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FirebaseNotificationExample</string>
+    <string name="default_notification_channel_id">test_channel</string>
+    <string name="pref_is_first_run">first_run</string>
 </resources>
