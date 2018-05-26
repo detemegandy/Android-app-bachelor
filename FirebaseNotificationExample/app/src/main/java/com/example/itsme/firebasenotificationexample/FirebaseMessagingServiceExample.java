@@ -20,6 +20,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
@@ -70,7 +71,8 @@ public class FirebaseMessagingServiceExample extends FirebaseMessagingService {
             Map<String, String> data = remoteMessage.getData();
             String artistName = data.get("artist");
             String songName = data.get("song");
-            String title = remoteMessage.getNotification().getTitle();
+            String coverURL = data.get("cover");
+            String title = data.get("title");
             Log.d(TAG, "artist name: " + artistName + "\n song name: " + songName);
 
             if (/* Check if data needs to be processed by long running job */ false) {
@@ -78,7 +80,7 @@ public class FirebaseMessagingServiceExample extends FirebaseMessagingService {
 //                scheduleJob();
             } else {
                 // Handle message within 10 seconds
-                handleNow(title, artistName, songName);
+                handleNow(title, artistName, songName, coverURL);
             }
 
         }
@@ -110,7 +112,7 @@ public class FirebaseMessagingServiceExample extends FirebaseMessagingService {
     /**
      * Handle time allotted to BroadcastReceivers.
      */
-    private void handleNow(String title, String artist, String songName) {
+    private void handleNow(String title, String artist, String songName, String coverURL) {
         sendNotification(title, artist, songName);
         Log.d(TAG, "Short lived task is done.");
     }
@@ -133,8 +135,9 @@ public class FirebaseMessagingServiceExample extends FirebaseMessagingService {
         Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder =
                 new NotificationCompat.Builder(this, channelId)
-                        .setSmallIcon(R.drawable.ic_stat_ic_notification)
+                        .setSmallIcon(R.drawable.spotify_notification)
                         .setContentTitle(title)
+                        .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.example_albumcover))
                         .setContentText(artist + " - " + songName)
                         .setAutoCancel(true)
                         .setSound(defaultSoundUri)

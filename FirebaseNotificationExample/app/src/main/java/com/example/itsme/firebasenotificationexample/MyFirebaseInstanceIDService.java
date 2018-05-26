@@ -17,6 +17,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
     @org.jetbrains.annotations.Contract(pure = true)
     static String getToken(){
+        registrationToken = FirebaseInstanceId.getInstance().getToken();
         return registrationToken;
     }
 
@@ -24,7 +25,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     public void onTokenRefresh() {
         // Get updated InstanceID token.
         registrationToken = FirebaseInstanceId.getInstance().getToken();
-        Log.d(TAG, "Refreshed token: " + registrationToken);
+        Log.d("onTokenRefresh", "Refreshed token: " + registrationToken);
 
         // If you want to send messages to this application instance or
         // manage this apps subscriptions on the server side, send the
@@ -44,9 +45,9 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
             e.printStackTrace();
         }
         String dataString = data.toString();
-
+        Log.d("sendRegistrationToSer", "registration token JSON: \n" + dataString);
         //schedule job
-        SendToBackend sendToBackend = new  SendToBackend();
+        SendToBackendTask sendToBackend = new  SendToBackendTask();
         sendToBackend.doInBackground(dataString);
     }
 }

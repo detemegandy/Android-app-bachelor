@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.3)  15 APR 2018 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.3)  25 MAY 2018 16:47
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1279,7 +1279,7 @@ eng.pdf>] [2
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 150.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 117.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1323,17 +1323,17 @@ Chapter 1.
 ) (Chapters/Chapter2.tex [1
 
 
-] [2]
+] [2
+
+]
 Chapter 2.
 ------------------------------------------------------------------------------
  2 Related Work
 ------------------------------------------------------------------------------
-) (Chapters/Chapter3.tex [3
-
-] [4]
+) (Chapters/Chapter3.tex [3] [4]
 Chapter 3.
 ------------------------------------------------------------------------------
- 3 Solution Approach
+ 3 Construction
 ------------------------------------------------------------------------------
 ) (Chapters/Chapter4.tex [5
 
@@ -1342,7 +1342,7 @@ Chapter 3.
 ]
 Chapter 4.
 ------------------------------------------------------------------------------
- 4 Experimental Evaluation
+ 4 Discussion
 ------------------------------------------------------------------------------
 ) (Chapters/Chapter5.tex [7] [8
 
@@ -1356,7 +1356,7 @@ Chapter 5.
 ]
 Chapter 6.
 ------------------------------------------------------------------------------
- 6 Conclusion and Future Directions
+ 6 Conclusion and Future Work
 ------------------------------------------------------------------------------
 )
 ------------------------------------------------------------------------------
@@ -1386,18 +1386,39 @@ Chapter 6.
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(Thesis.bbl)
+(Thesis.bbl
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 25.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
+[]\T1/lmr/m/n/10.95 (+20) Announcing the an-droid 1.0 sdk, re-lease 1, Sep 2008
+.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
+\T1/lmr/m/n/10.95 (+20) URL [][]$\T1/lmtt/m/n/10.95 https : / / android-[]devel
+opers . googleblog . com / 2008 / 09 /
+ []
+
+)
 
 Package ps4pdf Warning: `Thesis-pics.pdf' is no more valid.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
 [17
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
  (Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
 
 
  *File List*
@@ -1532,24 +1553,25 @@ uis_logo_eng.pdf    Graphic file (type pdf)
 ./Chapters/Chapter5.tex
 ./Chapters/Chapter6.tex
   Thesis.bbl
+  t1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: ADFD632E78B5DA6B53CF6B49B9ACD224;3835.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
+(rerunfilecheck)             Checksum: DA91D13B0CF663972096C30640AC1A41;3709.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
- 16459 strings out of 493305
- 238347 string characters out of 3138875
- 339120 words of memory out of 3000000
- 19590 multiletter control sequences out of 15000+200000
- 74577 words of font info for 71 fonts, out of 3000000 for 9000
+ 16502 strings out of 493305
+ 239129 string characters out of 3138875
+ 339112 words of memory out of 3000000
+ 19631 multiletter control sequences out of 15000+200000
+ 74730 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,11n,45p,716b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
+vips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
 .enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
@@ -1559,10 +1581,11 @@ TeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Thesis.pdf (33 pages, 310174 bytes).
+9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmtt10.pfb>
+Output written on Thesis.pdf (33 pages, 333610 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 18654 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 19166 words of extra memory for PDF output out of 20736 (max. 10000000)
 

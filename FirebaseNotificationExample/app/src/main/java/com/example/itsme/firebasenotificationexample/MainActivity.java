@@ -1,5 +1,6 @@
 package com.example.itsme.firebasenotificationexample;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -15,15 +16,18 @@ public class MainActivity extends AppCompatActivity {
 
     public static TextView textView;
 
-    public static void setText(String text) {
-        MainActivity.textView.setText(text);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.textView);
+
+        //get the intent that started this activity from the notification
+        Intent intent = getIntent();
+        upDateText();
+    }
+    void upDateText() {
+        textView.setText(MyFirebaseInstanceIDService.getToken());
     }
 
 //    void onFirstRun(){

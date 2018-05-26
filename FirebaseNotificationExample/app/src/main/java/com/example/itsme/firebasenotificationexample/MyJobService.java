@@ -9,7 +9,6 @@ public class MyJobService extends JobService {
         // Do some work here
 
 
-
         return false; // Answers the question: "Is there still work going on?"
     }
 

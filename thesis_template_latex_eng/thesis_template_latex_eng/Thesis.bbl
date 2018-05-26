@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -18,6 +18,11 @@ M.~Y.~S. Uddin, V.~Setty, Y.~Zhao, R.~Vitenberg, and N.~Venkatasubramanian.
 \newblock In \emph{2016 IEEE 36th International Conference on Distributed
   Computing Systems (ICDCS)}, pages 159--168, June 2016.
 \newblock \doi{10.1109/ICDCS.2016.107}.
+
+\bibitem[and(2008)]{android_developers_blog_2008}
+Announcing the android 1.0 sdk, release 1, Sep 2008.
+\newblock URL
+  \url{https://android-developers.googleblog.com/2008/09/announcing-android-10-sdk-release-1.html}.
 
 \bibitem[Pressman(2010)]{SoftwE}
 Roger~S. Pressman.
