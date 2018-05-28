@@ -69,7 +69,7 @@ public class FirebaseMessagingServiceExample extends FirebaseMessagingService {
         if (remoteMessage.getData().size() > 0) {
             Log.d(TAG, "Message data payload: " + remoteMessage.getData());
             Map<String, String> data = remoteMessage.getData();
-            String artistName = data.get("artist");
+            String artistName = data.get("artists");
             String songName = data.get("song");
             String coverURL = data.get("cover");
             String title = data.get("title");
