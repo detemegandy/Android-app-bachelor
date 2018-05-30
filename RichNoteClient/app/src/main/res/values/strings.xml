@@ -79,4 +79,8 @@
     <string name="title_notification_vibrate_setting">Vibrate</string>
     <string name="pref_give_me_a_number_title">Monthly Reset Date</string>
     <string name="SettingsActivityName">Settings</string>
+    <string name="default_notification_channel_id">1</string>
+    <string name="default_pref">com.example.itsme.richnoteclient.DEFAULT_PREF</string>
+    <string name="spotify_login_link_key" />
+    <string name="update_backend">update_backend</string>
 </resources>

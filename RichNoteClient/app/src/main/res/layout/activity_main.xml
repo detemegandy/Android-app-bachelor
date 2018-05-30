@@ -15,10 +15,13 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
 
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/webview"
-        ></WebView>
+    <TextView
+        android:id="@+id/info_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="nothing to see here"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivityToolbar"
+        tools:layout_editor_absoluteX="133dp" />
 
 </android.support.constraint.ConstraintLayout>
