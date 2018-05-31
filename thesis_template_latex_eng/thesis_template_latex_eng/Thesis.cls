@@ -251,27 +251,12 @@
        \bigskip
       \bigskip
       \bigskip
-      {\large External Supervisors \par}
-      {\LARGE External Supervisor 1 \par}
-      {\LARGE External Supervisor 2 \par}
  
 
       \bigskip
       \bigskip
       \bigskip 
-      {\large Reviewers \par}
-      {\LARGE Reviewer1 \par}
-      {\LARGE Reviewer2 \par}
       {\LARGE \par}
-      
-      %\vfill
-      %{\large A thesis submitted in partial fulfillment for the \par}
-      %{\large degree of Master of Science \par}
-      %\bigskip
-      %\bigskip
-      %{\large in the \par}
-      %{\large \facname \par}
-      %{\large \deptname \par}
       \bigskip
       \bigskip
       \bigskip

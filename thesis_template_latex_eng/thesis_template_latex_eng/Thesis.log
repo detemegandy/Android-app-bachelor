@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.3)  25 MAY 2018 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.3)  31 MAY 2018 13:57
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -825,7 +825,16 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@algorithm=\toks36
 \c@algorithm=\count142
-) (algorithmic.sty
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(algorithmic.sty
 Package: algorithmic 2006/06/02
 
 Document Style `algorithmic' - environment
@@ -1090,34 +1099,34 @@ Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
 \c@thm=\count150
-Package hyperref Info: Option `colorlinks' set `true' on input line 42.
+Package hyperref Info: Option `colorlinks' set `true' on input line 74.
  (Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 81.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 49.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 81.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1151,17 +1160,8 @@ Package caption Info: End \AtBeginDocument code.
 )
 \c@lstlisting=\count157
 \AtBeginShipoutBox=\box39
- ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
-Package hyperref Info: Link coloring ON on input line 49.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package hyperref Info: Link coloring ON on input line 81.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -1169,15 +1169,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count158
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \ref on input line 81.
+LaTeX Info: Redefining \pageref on input line 81.
+LaTeX Info: Redefining \nameref on input line 81.
 
 (Thesis.out) (Thesis.out)
 \@outlinefile=\write3
 \openout3 = `Thesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 49.
+LaTeX Info: Redefining \microtypecontext on input line 81.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1198,39 +1198,39 @@ Package ps4pdf Warning: Graphic container `Thesis-pics.pdf' not found.
 ------------------------------------------------------------------------------
  Title Page
 ------------------------------------------------------------------------------
-<uis_logo_eng.pdf, id=111, 309.155pt x 106.3975pt>
+<uis_logo_eng.pdf, id=123, 309.155pt x 106.3975pt>
 File: uis_logo_eng.pdf Graphic file (type pdf)
 <use uis_logo_eng.pdf>
-Package pdftex.def Info: uis_logo_eng.pdf  used on input line 63.
+Package pdftex.def Info: uis_logo_eng.pdf  used on input line 95.
 (pdftex.def)             Requested size: 142.26378pt x 48.96292pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 63.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 95.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 63.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 95.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 63.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 95.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 63.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 95.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 63.
+(Font)              <10.95> on input line 95.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 63.
+(Font)              <8> on input line 95.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 63.
-LaTeX Font Info:    Try loading font information for U+msa on input line 63.
+(Font)              <6> on input line 95.
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1238,7 +1238,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 63.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1246,7 +1246,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
 
  []
 
@@ -1279,7 +1279,7 @@ eng.pdf>] [2
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 117.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 152.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1306,69 +1306,141 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ] [12
 
-] [13]
+]
 ------------------------------------------------------------------------------
  Symbols
 ------------------------------------------------------------------------------
-[14
+[13
 
 
-] [15] [16
+] [14
 
 ] (Chapters/Chapter1.tex
 Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction
 ------------------------------------------------------------------------------
-) (Chapters/Chapter2.tex [1
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 12.
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [1
 
 
-] [2
-
-]
+])
+(Chapters/Chapter2.tex [2]
 Chapter 2.
 ------------------------------------------------------------------------------
  2 Related Work
 ------------------------------------------------------------------------------
-) (Chapters/Chapter3.tex [3] [4]
+) (Chapters/Chapter3.tex [3
+
+] [4
+
+]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Construction
 ------------------------------------------------------------------------------
-) (Chapters/Chapter4.tex [5
+<Figures/android-stack_2x.png, id=266, 1389.19pt x 2045.6425pt>
+File: Figures/android-stack_2x.png Graphic file (type png)
+<use Figures/android-stack_2x.png>
+Package pdftex.def Info: Figures/android-stack_2x.png  used on input line 22.
+(pdftex.def)             Requested size: 417.47307pt x 614.75877pt.
+[5]
+Overfull \vbox (29.70378pt too high) has occurred while \output is active []
 
-] [6
+
+[6 <./Figures/android-stack_2x.png (PNG copy)>] [7]
+<Figures/android-studio.png, id=295, 1322.69156pt x 813.0375pt>
+File: Figures/android-studio.png Graphic file (type png)
+<use Figures/android-studio.png>
+Package pdftex.def Info: Figures/android-studio.png  used on input line 60.
+(pdftex.def)             Requested size: 417.47307pt x 256.6044pt.
+ [8 <./Figures/android-studio.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 82.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 82.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 82.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 82.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 82.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 82.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 82.
+
+[9] [10] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 99.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 99.
+ [11
 
 ]
+<Figures/resources.png, id=373, 214.55156pt x 441.14813pt>
+File: Figures/resources.png Graphic file (type png)
+<use Figures/resources.png>
+Package pdftex.def Info: Figures/resources.png  used on input line 151.
+(pdftex.def)             Requested size: 166.57364pt x 342.48654pt.
+ [12 <./Figures/resources.png (PNG copy)>]
+<Figures/mainoncreate.png, id=385, 751.30687pt x 162.6075pt>
+File: Figures/mainoncreate.png Graphic file (type png)
+<use Figures/mainoncreate.png>
+Package pdftex.def Info: Figures/mainoncreate.png  used on input line 180.
+(pdftex.def)             Requested size: 417.47307pt x 90.35739pt.
+ [13]
+<Figures/activity_main.png, id=408, 593.96906pt x 350.05782pt>
+File: Figures/activity_main.png Graphic file (type png)
+<use Figures/activity_main.png>
+Package pdftex.def Info: Figures/activity_main.png  used on input line 193.
+(pdftex.def)             Requested size: 417.47307pt x 246.04832pt.
+ [14 <./Figures/mainoncreate.png (PNG copy)>]
+<Figures/mainonactivityresult.png, id=421, 677.53125pt x 134.00063pt>
+File: Figures/mainonactivityresult.png Graphic file (type png)
+<use Figures/mainonactivityresult.png>
+Package pdftex.def Info: Figures/mainonactivityresult.png  used on input line 2
+06.
+(pdftex.def)             Requested size: 417.47307pt x 82.57039pt.
+ [15 <./Figures/activity_main.png (PNG copy)> <./Figures/mainonactivityresult.p
+ng (PNG copy)>]) (Chapters/Chapter6.tex [16]
 Chapter 4.
 ------------------------------------------------------------------------------
- 4 Discussion
-------------------------------------------------------------------------------
-) (Chapters/Chapter5.tex [7] [8
-
-]
-Chapter 5.
-------------------------------------------------------------------------------
- 5 Discussion
-------------------------------------------------------------------------------
-) (Chapters/Chapter6.tex [9] [10
-
-]
-Chapter 6.
-------------------------------------------------------------------------------
- 6 Conclusion and Future Work
+ 4 Conclusion and Future Work
 ------------------------------------------------------------------------------
 )
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
-[11] [12
+[17
+
+] [18
 
 ] (Thesis.lof)
 \tf@lof=\write5
 \openout5 = `Thesis.lof'.
 
- [13] [14
+ [19] [20
 
 ]
 ------------------------------------------------------------------------------
@@ -1378,16 +1450,16 @@ Chapter 6.
 \tf@lot=\write6
 \openout6 = `Thesis.lot'.
 
- [15
+ [21
 
-] [16
+] [22
 
 ]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
 (Thesis.bbl
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 25.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 16.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1396,29 +1468,29 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
 []\T1/lmr/m/n/10.95 (+20) Announcing the an-droid 1.0 sdk, re-lease 1, Sep 2008
 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
 \T1/lmr/m/n/10.95 (+20) URL [][]$\T1/lmtt/m/n/10.95 https : / / android-[]devel
 opers . googleblog . com / 2008 / 09 /
  []
 
-)
+[23
+
+
+])
 
 Package ps4pdf Warning: `Thesis-pics.pdf' is no more valid.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
-[17
-
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
+[24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
  (Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 238.
 
 
  *File List*
@@ -1505,6 +1577,8 @@ verbatim.sty    2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
     calc.sty    2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 algorithm.sty    
    float.sty    2001/11/08 v1.3d Float enhancements (AL)
+   color.sty    2016/07/10 v1.1e Standard LaTeX Color (DPC)
+   color.cfg    2016/01/02 v1.6 sample color configuration
 algorithmic.sty    2006/06/02
  fontenc.sty
    t1enc.def    2017/04/05 v2.0i Standard LaTeX file
@@ -1528,8 +1602,6 @@ es
    t1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
 ltcaption.sty    2013/06/09 v1.4-94 longtable captions (AR)
 supp-pdf.mkii
-   color.sty    2016/07/10 v1.1e Standard LaTeX Color (DPC)
-   color.cfg    2016/01/02 v1.6 sample color configuration
  nameref.sty    2016/05/21 v2.44 Cross-referencing by name of section
 gettitlestring.sty    2016/05/16 v1.5 Cleanup title references (HO)
   Thesis.out
@@ -1547,45 +1619,55 @@ uis_logo_eng.pdf    Graphic file (type pdf)
   mt-msb.cfg    2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
   t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
 ./Chapters/Chapter1.tex
+  ts1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
 ./Chapters/Chapter2.tex
 ./Chapters/Chapter3.tex
-./Chapters/Chapter4.tex
-./Chapters/Chapter5.tex
+Figures/android-stack_2x.png
+Figures/android-studio.png
+lstlang1.sty    2015/06/04 1.6 listings language file
+ lstmisc.sty    2015/06/04 1.6 (Carsten Heinz)
+Figures/resources.png
+Figures/mainoncreate.png
+Figures/activity_main.png
+Figures/mainonactivityresult.png
 ./Chapters/Chapter6.tex
   Thesis.bbl
   t1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 238.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DA91D13B0CF663972096C30640AC1A41;3709.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
+(rerunfilecheck)             Checksum: AA35773E3FD2F1C13A8BDC941D98676C;4277.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 238.
  ) 
 Here is how much of TeX's memory you used:
- 16502 strings out of 493305
- 239129 string characters out of 3138875
- 339112 words of memory out of 3000000
- 19631 multiletter control sequences out of 15000+200000
- 74730 words of font info for 70 fonts, out of 3000000 for 9000
+ 17213 strings out of 493305
+ 248105 string characters out of 3138875
+ 511892 words of memory out of 3000000
+ 20164 multiletter control sequences out of 15000+200000
+ 103016 words of font info for 118 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,11n,45p,716b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,11n,51p,1692b,1277s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
-vips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
-.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmtt10.pfb>
-Output written on Thesis.pdf (33 pages, 333610 bytes).
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.en
+c}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+ro10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmtt10.pfb>
+Output written on Thesis.pdf (38 pages, 907239 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 19166 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 167 named destinations out of 1000 (max. 500000)
+ 29972 words of extra memory for PDF output out of 35830 (max. 10000000)
 

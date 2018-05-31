@@ -4,30 +4,40 @@
 \vspace {1em}
 \contentsline {chapter}{Abbreviations}{xi}{dummy.5}
 \vspace {1em}
-\contentsline {chapter}{Symbols}{xiv}{dummy.8}
+\contentsline {chapter}{Symbols}{xiii}{dummy.8}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.11}
-\contentsline {section}{\numberline {1.1}Motivation}{1}{section.12}
-\contentsline {section}{\numberline {1.2}Problem Definition}{1}{section.13}
-\contentsline {section}{\numberline {1.3}Usecases/Examples}{1}{section.14}
-\contentsline {section}{\numberline {1.4}Challenges}{1}{section.15}
-\contentsline {section}{\numberline {1.5}Contributions}{1}{section.16}
-\contentsline {section}{\numberline {1.6}Outline}{1}{section.17}
-\contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.18}
-\contentsline {section}{\numberline {2.1}Richnote}{3}{section.19}
-\contentsline {subsection}{\numberline {2.1.1}the problem}{4}{subsection.20}
-\contentsline {chapter}{\numberline {3}Construction}{5}{chapter.21}
-\contentsline {section}{\numberline {3.1}Introduction}{5}{section.22}
-\contentsline {section}{\numberline {3.2}Existing Approaches/Baselines}{5}{section.23}
-\contentsline {section}{\numberline {3.3}Analysis}{5}{section.24}
-\contentsline {section}{\numberline {3.4}Proposed Solution}{5}{section.25}
-\contentsline {chapter}{\numberline {4}Discussion}{7}{chapter.26}
-\contentsline {section}{\numberline {4.1}Experimental Setup and Data Set}{7}{section.27}
-\contentsline {section}{\numberline {4.2}Experimental Results}{7}{section.28}
-\contentsline {chapter}{\numberline {5}Discussion}{9}{chapter.29}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{11}{chapter.30}
+\contentsline {section}{\numberline {1.1}Problem Definition}{1}{section.12}
+\contentsline {section}{\numberline {1.2}Challenges}{1}{section.13}
+\contentsline {section}{\numberline {1.3}Contributions}{2}{section.14}
+\contentsline {section}{\numberline {1.4}Outline}{2}{section.15}
+\contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.16}
+\contentsline {section}{\numberline {2.1}Richnote}{3}{section.17}
+\contentsline {section}{\numberline {2.2}The Backend Server}{3}{section.18}
+\contentsline {chapter}{\numberline {3}Construction}{5}{chapter.19}
+\contentsline {section}{\numberline {3.1}Introduction}{5}{section.20}
+\contentsline {section}{\numberline {3.2}Tools}{5}{section.21}
+\contentsline {subsection}{\numberline {3.2.1}Version Control}{5}{subsection.22}
+\contentsline {subsection}{\numberline {3.2.2}The Android Operating System }{5}{subsection.23}
+\contentsline {subsubsection}{The Linux Kernel}{6}{section*.25}
+\contentsline {subsubsection}{Android Runtime}{7}{section*.26}
+\contentsline {subsubsection}{Java API Framework}{7}{section*.27}
+\contentsline {subsection}{\numberline {3.2.3}Android Studio}{8}{subsection.28}
+\contentsline {subsection}{\numberline {3.2.4}Gradle}{9}{subsection.30}
+\contentsline {subsection}{\numberline {3.2.5}Firebase Cloud Messaging}{9}{subsection.31}
+\contentsline {section}{\numberline {3.3}Code}{9}{section.32}
+\contentsline {subsection}{\numberline {3.3.1}The App Manifest \nobreakspace {}\cite {appManifest}}{9}{subsection.33}
+\contentsline {subsubsection}{Permissions \cite {permissions}}{12}{section*.80}
+\contentsline {subsubsection}{AppTheme}{13}{section*.82}
+\contentsline {subsection}{\numberline {3.3.2}MainActivity }{14}{subsection.98}
+\contentsline {subsubsection}{Intents and Intent-filters}{14}{section*.100}
+\contentsline {subsubsection}{Activity}{14}{section*.101}
+\contentsline {subsection}{\numberline {3.3.3}UpdateBackend }{16}{subsection.104}
+\contentsline {subsection}{\numberline {3.3.4}SettingsActivity }{16}{subsection.105}
+\contentsline {subsection}{\numberline {3.3.5}FCM}{16}{subsection.106}
+\contentsline {chapter}{\numberline {4}Conclusion and Future Work}{17}{chapter.107}
 \vspace {2em}
-\contentsline {chapter}{List of Figures}{11}{dummy.31}
-\contentsline {chapter}{List of Tables}{15}{dummy.33}
+\contentsline {chapter}{List of Figures}{17}{dummy.108}
+\contentsline {chapter}{List of Tables}{21}{dummy.110}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{17}{dummy.35}
+\contentsline {chapter}{Bibliography}{23}{dummy.112}

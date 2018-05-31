@@ -12,6 +12,38 @@
 \usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
 \usepackage{vector}  % Allows "\bvec{}" and "\buvec{}" for "blackboard" style bold vectors in maths
 \usepackage{algorithm}
+
+%start from https://www.sharelatex.com/learn/Code_listing
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+%end copy from https://www.sharelatex.com/learn/Code_listing
+
 \usepackage{algorithmic}
 \usepackage[T1]{fontenc}
 \usepackage{subfigure}
@@ -89,7 +121,10 @@ Rick Cook \cite{cook_1990}\end{flushright}
 % The Abstract Page
 \addtotoc{Abstract}  % Add the "Abstract" page entry to the Contents
 \abstract{
+	Getting the most useful notifications from your available data and battery life is difficult problem. This thesis describes the development of a application which provides constraints to use in a algorithm solving this problem. Using a combination of workmanager, telephonymanager, settingsactivity, JSONObject, SharedPreferences, Sticky intents and more from the android API, the constraints are regularly sent to the algorithm running on a backend.
+	Notifications are generated and received using Firebase Cloud Messaging and displayed as rich notifications on the device.
 \addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
+
 
 }
 
@@ -103,7 +138,7 @@ Rick Cook \cite{cook_1990}\end{flushright}
 % The Acknowledgements page, for thanking everyone
 \acknowledgements{
 \addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
-
+I would like to thank Vinay Setty for beeing a great supervisor during my thesis.
 
 }
 \clearpage  % End of the Acknowledgements
@@ -125,11 +160,10 @@ Rick Cook \cite{cook_1990}\end{flushright}
 {
 \textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
 \textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+\textbf{OS} & \textbf{O}perating \textbf{S}ystem
 \addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for 
 }
 
-
-aesthetics
 
 
 % }
@@ -166,15 +200,10 @@ $\omega$ & angular frequency & rads$^{-1}$ \\
 
 \input{./Chapters/Chapter2} % Related Work
 
-\input{./Chapters/Chapter3} % Survey
-
-\input{./Chapters/Chapter4} % Main Approach
-
-\input{./Chapters/Chapter5} % Experiments
+\input{./Chapters/Chapter3} % Construction
 
 \input{./Chapters/Chapter6} % Conclusion and Future Work
 
-%\input{./Chapters/Chapter7} % Conclusion
 
 %% ----------------------------------------------------------------
 % Now begin the Appendices, including them as separate files

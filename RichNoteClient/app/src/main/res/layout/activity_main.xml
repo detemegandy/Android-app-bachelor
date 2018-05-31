@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="nothing to see here"
+        android:text="Log in to Spotify and set day of month to reset data in the settings"
         app:layout_constraintTop_toBottomOf="@+id/mainActivityToolbar"
         tools:layout_editor_absoluteX="133dp" />
 

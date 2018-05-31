@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,11 @@ Rick Cook.
 \newblock \emph{The wizardry compiled}.
 \newblock Baen, 1990.
 
+\bibitem[app(2018)]{appManifest}
+App manifest overview | android developers, May 2018.
+\newblock URL
+  \url{https://developer.android.com/guide/topics/manifest/manifest-intro}.
+
 \bibitem[Uddin et~al.(2016)Uddin, Setty, Zhao, Vitenberg, and
   Venkatasubramanian]{Richnote}
 M.~Y.~S. Uddin, V.~Setty, Y.~Zhao, R.~Vitenberg, and N.~Venkatasubramanian.
@@ -19,15 +24,62 @@ M.~Y.~S. Uddin, V.~Setty, Y.~Zhao, R.~Vitenberg, and N.~Venkatasubramanian.
   Computing Systems (ICDCS)}, pages 159--168, June 2016.
 \newblock \doi{10.1109/ICDCS.2016.107}.
 
-\bibitem[and(2008)]{android_developers_blog_2008}
-Announcing the android 1.0 sdk, release 1, Sep 2008.
-\newblock URL
-  \url{https://android-developers.googleblog.com/2008/09/announcing-android-10-sdk-release-1.html}.
-
 \bibitem[Pressman(2010)]{SoftwE}
 Roger~S. Pressman.
 \newblock \emph{Software Engineering: A Practitioner's Approach}.
 \newblock McGraw-Hill Higher Education, seventh international edition, 2010.
 \newblock ISBN 0071267824, 9780071267823.
+
+\bibitem[Detemegandy()]{detemegandy}
+Detemegandy.
+\newblock detemegandy/android-app-bachelor.
+\newblock URL \url{https://github.com/detemegandy/Android-app-bachelor/}.
+
+\bibitem[gar(2018)]{gartner}
+Gartner says worldwide sales of smartphones returned to growth in first quarter
+  of 2018, May 2018.
+\newblock URL \url{https://www.gartner.com/newsroom/id/3876865}.
+
+\bibitem[and(2008)]{android_developers_blog_2008}
+Announcing the android 1.0 sdk, release 1, Sep 2008.
+\newblock URL
+  \url{https://android-developers.googleblog.com/2008/09/announcing-android-10-sdk-release-1.html}.
+
+\bibitem[and({\natexlab{a}})]{android_open_source_project}
+the android open source project, {\natexlab{a}}.
+\newblock URL \url{https://source.android.com/}.
+
+\bibitem[and(2018)]{android_developers_2018}
+Platform architecture | android developers, Apr 2018.
+\newblock URL \url{https://developer.android.com/guide/platform/}.
+
+\bibitem[and({\natexlab{b}})]{android_studio}
+Meet android studio | android developers, {\natexlab{b}}.
+\newblock URL \url{https://developer.android.com/studio/intro/}.
+
+\bibitem[Alobar()]{alobar}
+Alobar.
+\newblock Alobar/androidpreferencetest.
+\newblock URL
+  \url{https://github.com/Alobar/AndroidPreferenceTest/tree/master/alobar-preference}.
+
+\bibitem[FCM()]{FCM}
+Firebase cloud messaging | firebase.
+\newblock URL \url{https://firebase.google.com/docs/cloud-messaging/}.
+
+\bibitem[per(2018)]{permissions}
+Permissions overview | android developers, May 2018.
+\newblock URL
+  \url{https://developer.android.com/guide/topics/permissions/overview}.
+
+\bibitem[int()]{intent}
+Intents and intent filters | android developers.
+\newblock URL
+  \url{https://developer.android.com/guide/components/intents-filters}.
+
+\bibitem[act()]{activity}
+Introduction to activities | android developers.
+\newblock URL
+  \url{https://developer.android.com/guide/components/activities/intro-activities}.
 
 \end{thebibliography}

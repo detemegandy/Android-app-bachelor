@@ -1,6 +1,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The Android software stack \cite {android_developers_2018}\relax }}{6}{figure.caption.24}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Android Studio \relax }}{8}{figure.caption.29}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The App Res folder \relax }}{12}{figure.caption.81}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces MainActivity's onCreate method \relax }}{14}{figure.caption.99}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Main Activity Layout file\relax }}{15}{figure.caption.102}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces on activity result callback method in main activity\relax }}{15}{figure.caption.103}
 \addvspace {10\p@ }

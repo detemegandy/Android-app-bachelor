@@ -5,21 +5,35 @@
 %\lhead{Chapter 1. \emph{Introduction}} % Write in your own Chapter title to set the page header
 
 
-\section{Motivation}
 
 \section{Problem Definition}
-The problem is to extract physical limitations  and user specified restrictions from the device, and sending the data to the backend. Furthermore it needs to receive and display generated notifications. It also needs to provide login credentials securely to the backend.
-%The goal of this thesis is to develop an android app to track the smartphone status such as battery, bandwidth availability and mobile data quota etc. The measurements are then sent to a backend service which intelligently adapts the quality of multimedia notifications according to the device status.
+The object of this thesis is to develop a app for devices running the android operating system. The app needs to  get constraints from the device and send them to backend server. The constraints are:
+\begin{itemize}
+	\item remaining battery percentage of the device
+	\item Internet connection type
+	\item mobile data remaining in current month 
+	\item whether the device is currently charging or not
+\end{itemize}
+The app developed in this thesis also needs to receive and display rich notifications that are generated and sent from the backend and to provide it with Spotify login credentials securely. Furthermore the backend needs information from the app, that enables unique identification of a specific installation and correlation of login information previously mentioned.
 
-%The app will be designed as a client for notifications from Spotify as well as social networks such as Facebook. The app authenticates users with the help of APIs from these services and receives notifications from the backend. From the device side it collects and sends the device status to the backend and receives and displays the notifications.
-
-%The backend service acts as a forwarding agent for notifications from the original services such as Spotify and Facebook. The backend intercepts the notifications for the users using the authentication tokens obtained via user credentials. The backend service according to the device status transforms the notifications (for e.g, lower resolution images in Facebook) and forwards it to the client app. The forwarding of notifications is done using Google's notification service.
-
-\section{Usecases/Examples}
 
 \section{Challenges}
+Starting developing android for the first time on the Android platform require extensive reading and practice. Several parts of the code in official guides also do not compile, adding difficulty, as the guides have not been updated quickly enough compared to the development of the Android OS.
 
 \section{Contributions}
+The app developed in this thesis can:
+\begin{itemize}
+	\item get remaining battery percentage of the device
+	\item get Internet connection type
+	\item get mobile data remaining in current month 
+	\item get whether the device is currently charging or not 
+	\item display rich notifications to user
+\end{itemize}
 
 \section{Outline}
 
+The goal of this thesis is to develop an android app to track the smartphone status such as battery, bandwidth availability and mobile data quota etc. The measurements are then sent to a backend service which intelligently adapts the quality of multimedia notifications according to the device status.
+
+The app will be designed as a client for notifications from Spotify as well as social networks such as Facebook. The app authenticates users with the help of APIs from these services and receives notifications from the backend. From the device side it collects and sends the device status to the backend and receives and displays the notifications.
+
+The backend service acts as a forwarding agent for notifications from the original services such as Spotify and Facebook. The backend generates the notifications for the users using the authentication tokens obtained via user credentials. The backend service, according to the device status, transforms the notifications (for e.g, lower resolution images in Facebook) and forwards it to the client app. The forwarding of notifications is done using Google's Firebase Cloud Messaging service.

@@ -49,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
     //used to tag update to the server
     private static String UPDATE_BACKEND = String.valueOf(R.string.update_backend);
 
-    //must be the same as id's in the XML documents
-
+    //SharedPreferences for persistent data
     SharedPreferences preferences;
 
+    //TextView to guide user to setup notifikasjons
     TextView infoTextView;
     private boolean isLoggedInToSpotify;
 
@@ -61,16 +61,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar myToolbar = findViewById(R.id.mainActivityToolbar);
-        myToolbar.setTitle("");
         setSupportActionBar(myToolbar);
-        initializeAndRegisterReceivers();
         initClassFields();
 
-        //ask the user for special permissions before using it in update backend in the callback for permissin granted
+        //ask the user for special permissions before using it in update backend in the callback for permission granted
         askForReadPhoneState();
 
     }
-
 
     private void askForReadPhoneState() {
         if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
@@ -150,19 +147,6 @@ public class MainActivity extends AppCompatActivity {
         infoTextView = findViewById(R.id.info_textview);
         preferences = PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
         isLoggedInToSpotify = preferences.getBoolean("isLoggedInToSpotify", false);
-
-        if (isLoggedInToSpotify){
-            infoTextView.setVisibility(View.INVISIBLE);
-        } else {
-            infoTextView.setText("Please log in to Spotify");
-        }
-    }
-
-
-    private void initializeAndRegisterReceivers() {
-        //start the connectivity receiver and register for changes in connection
-        ConnectionReceiver connectionReceiver = new ConnectionReceiver();
-        registerReceiver(connectionReceiver, new IntentFilter(ACTION_CONNECTION_CHANGED));
     }
 
 
@@ -215,15 +199,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //class for looking at bandwidth
-    private class ConnectionReceiver extends BroadcastReceiver {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            //connection changed, it could mean there is no internet or the type of connection has changed
-            Bundle bundle = intent.getExtras();
-        }
-    }
 
     private void startSettingsActivity() {
         startActivity(new Intent(this, SettingsActivity.class));
