@@ -1,5 +1,5 @@
 ### Android-app-bachelor
-During my thesis I mad many smaller test applications and then integrated some into the main application.
+During my thesis I made many smaller test applications and then integrated some into the main application.
 
 ## Steketid
 This is a finished app to calculate the time it will take to cook a given amount of pizzas using a given amount of ovens.
