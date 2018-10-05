@@ -1,6 +1,8 @@
 ### Android-app-bachelor
 During my thesis I made many smaller test applications and then integrated some into the main application.
 
+[Thesis pdf](thesis_template_latex_eng/thesis_template_latex_eng/Thesis.pdf)
+
 ## Steketid
 This is a finished app to calculate the time it will take to cook a given amount of pizzas using a given amount of ovens.
 
